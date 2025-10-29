@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white p-4">
+      <div class="text-center font-bold text-xl mb-4">AdminLTE</div>
+      <div class="mb-4">Alexander Pierce <span class="text-green-400">● Online</span></div>
+      <nav>
+        <ul>
+          <li class="mb-2"><a href="#" class="block py-2 px-2 rounded hover:bg-gray-700">Dashboard v1</a></li>
+          <li class="mb-2"><a href="#" class="block py-2 px-2 rounded hover:bg-gray-700">Dashboard v2</a></li>
+          <li class="mb-2"><a href="#" class="block py-2 px-2 rounded hover:bg-gray-700">Layout Options</a></li>
+          <li class="mb-2"><a href="#" class="block py-2 px-2 rounded hover:bg-gray-700">Widgets</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 p-6">
+      <h1 class="text-2xl font-bold mb-4">PAINEL</h1>
+      
+      <!-- Cards -->
+      <div class="grid grid-cols-4 gap-4 mb-6">
+        <div class="bg-blue-400 text-white p-4 rounded">Tráfego de CPU<br>90%</div>
+        <div class="bg-red-500 text-white p-4 rounded">Curtidas<br>41,410</div>
+        <div class="bg-green-500 text-white p-4 rounded">Venda/s<br>760</div>
+        <div class="bg-orange-500 text-white p-4 rounded">Novos membros<br>2,000</div>
+      </div>
+
+      <!-- Gráfico e Metas -->
+      <div class="bg-white p-4 rounded shadow mb-6">
+        <h2 class="font-bold mb-2">Relatório de Recapitulação Mensal</h2>
+        <div class="h-40 bg-gray-200 rounded flex items-center justify-center">[Gráfico aqui]</div>
+        <div class="mt-4 space-y-1">
+          <div>Adicionar produtos ao carrinho: 160/200</div>
+          <div>Complete Purchase: 310/400</div>
+          <div>Compra completa: 480/800</div>
+          <div>Enviar consultas: 250/500</div>
+        </div>
+      </div>
+
+      <!-- Visitors Report -->
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="font-bold mb-2">Relatório de visitantes</h2>
+        <div class="h-32 bg-gray-200 rounded flex items-center justify-center">[Mapa aqui]</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
