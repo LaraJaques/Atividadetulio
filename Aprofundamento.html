@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .produto-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .preco-pix {
+      color: green;
+      font-weight: bold;
+    }
+    .estrelas {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <h2 class="text-center mb-4">Produtos em Destaque</h2>
+    <div class="row g-4">
+      
+      <!-- Produto -->
+      <div class="col-md-3">
+        <div class="card produto-card">
+          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Produto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Produto - 1017</h5>
+            <p class="estrelas">★★★★★</p>
+            <p>R$ 44,90 no cartão <br><span class="preco-pix">R$ 42,65 no pix</span></p>
+            <a href="#" class="btn btn-success w-100">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto -->
+      <div class="col-md-3">
+        <div class="card produto-card">
+          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Produto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Produto - 1012</h5>
+            <p class="estrelas">★★★★★</p>
+            <p>R$ 44,90 no cartão <br><span class="preco-pix">R$ 42,65 no pix</span></p>
+            <a href="#" class="btn btn-success w-100">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto -->
+      <div class="col-md-3">
+        <div class="card produto-card">
+          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Produto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Produto - 1003</h5>
+            <p class="estrelas">★★★★★</p>
+            <p>R$ 44,90 no cartão <br><span class="preco-pix">R$ 42,65 no pix</span></p>
+            <a href="#" class="btn btn-success w-100">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto -->
+      <div class="col-md-3">
+        <div class="card produto-card">
+          <img src="https://via.placeholder.com/200" class="card-img-top" alt="Produto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Produto Fictício</h5>
+            <p class="estrelas">★★★★★</p>
+            <p>R$ 46,90 no cartão <br><span class="preco-pix">R$ 44,55 no pix</span></p>
+            <a href="#" class="btn btn-success w-100">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
