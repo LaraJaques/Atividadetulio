@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de JavaScript</title>
+</head>
+<body>
+    <h1>1️⃣ Operadores</h1>
+    <pre id="operadores"></pre>
+
+    <h1>2️⃣ Estruturas e Loops</h1>
+    <pre id="estruturas"></pre>
+
+    <script>
+        // ===== 1. Operadores =====
+        let x = 8;
+        let y = 3;
+        let operadoresResultados = "";
+
+        // Operações matemáticas
+        operadoresResultados += "Soma: " + (x + y) + "\n";
+        operadoresResultados += "Subtração: " + (x - y) + "\n";
+        operadoresResultados += "Multiplicação: " + (x * y) + "\n";
+        operadoresResultados += "Divisão: " + (x / y) + "\n";
+        operadoresResultados += "Resto: " + (x % y) + "\n";
+        operadoresResultados += "Exponenciação: " + (x ** y) + "\n\n";
+
+        // Comparações
+        operadoresResultados += "x > y: " + (x > y) + "\n";
+        operadoresResultados += "x < y: " + (x < y) + "\n";
+        operadoresResultados += "x == y: " + (x == y) + "\n";
+        operadoresResultados += "x != y: " + (x != y) + "\n";
+        operadoresResultados += "x >= y: " + (x >= y) + "\n";
+        operadoresResultados += "x <= y: " + (x <= y) + "\n\n";
+
+        // Operadores lógicos
+        operadoresResultados += "x > 5 && y < 5: " + (x > 5 && y < 5) + "\n";
+        operadoresResultados += "x < 5 || y < 5: " + (x < 5 || y < 5) + "\n";
+        operadoresResultados += "!(x == y): " + (!(x == y)) + "\n";
+
+        document.getElementById("operadores").textContent = operadoresResultados;
+
+        // ===== 2. Estruturas e Loops =====
+        let estruturasResultados = "";
+
+        // If/else nota
+        let nota = 65;
+        if (nota >= 70) {
+            estruturasResultados += "Nota: " + nota + " → Aprovado\n";
+        } else if (nota >= 50) {
+            estruturasResultados += "Nota: " + nota + " → Recuperação\n";
+        } else {
+            estruturasResultados += "Nota: " + nota + " → Reprovado\n";
+        }
+
+        // Switch mês
+        let mes = 4;
+        switch (mes) {
+            case 1: estruturasResultados += "Mês: Janeiro\n"; break;
+            case 2: estruturasResultados += "Mês: Fevereiro\n"; break;
+            case 3: estruturasResultados += "Mês: Março\n"; break;
+            case 4: estruturasResultados += "Mês: Abril\n"; break;
+            case 5: estruturasResultados += "Mês: Maio\n"; break;
+            case 6: estruturasResultados += "Mês: Junho\n"; break;
+            case 7: estruturasResultados += "Mês: Julho\n"; break;
+            case 8: estruturasResultados += "Mês: Agosto\n"; break;
+            case 9: estruturasResultados += "Mês: Setembro\n"; break;
+            case 10: estruturasResultados += "Mês: Outubro\n"; break;
+            case 11: estruturasResultados += "Mês: Novembro\n"; break;
+            case 12: estruturasResultados += "Mês: Dezembro\n"; break;
+            default: estruturasResultados += "Mês inválido\n"; break;
+        }
+
+        // While números pares de 0 a 20
+        estruturasResultados += "\nNúmeros pares de 0 a 20:\n";
+        let i = 0;
+        while (i <= 20) {
+            if (i % 2 === 0) estruturasResultados += i + " ";
+            i++;
+        }
+        estruturasResultados += "\n";
+
+        // For array de cidades
+        let cidades = ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Curitiba"];
+        estruturasResultados += "\nCidades:\n";
+        for (let j = 0; j < cidades.length; j++) {
+            estruturasResultados += cidades[j] + "\n";
+        }
+
+        // For decrescente de 10 a 1
+        estruturasResultados += "\nNúmeros de 10 a 1:\n";
+        for (let k = 10; k >= 1; k--) {
+            estruturasResultados += k + " ";
+        }
+
+        document.getElementById("estruturas").textContent = estruturasResultados;
+    </script>
+</body>
+</html>
